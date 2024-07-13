@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Object Detection Website</h1>
+        <div class="input-section">
+            <button id="uploadBtn">Upload Photo</button>
+            <button id="cameraBtn">Open Camera</button>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        </div>
+        <div id="photoGallery"></div>
+        <div id="results"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="script.js"></script>
+</body>
+</html>
